@@ -48,7 +48,32 @@
         mainApp.main_fun();
     });
 
+
+    const elements_right = document.querySelectorAll(".fade-right");
+    const elements_left = document.querySelectorAll(".fade-left");
+    const elements_top = document.querySelectorAll(".fade-top");
+    function triggerAnimation(entries) {
+        entries.forEach(entry =>{
+            const div = entry.target;
+            
+            div.classList.toggle("unset", entry.isIntersecting);
+        })
+    }
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0
+    }
+    const observar = new IntersectionObserver(triggerAnimation, options);
+    elements_right.forEach( element=>{
+        observar.observe(element);
+    })
+    elements_left.forEach( element=>{
+        observar.observe(element);
+    })
+    elements_top.forEach( element=>{
+        observar.observe(element);
+    })
+
 }(jQuery));
-
-
 

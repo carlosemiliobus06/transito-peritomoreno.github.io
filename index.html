@@ -21,8 +21,8 @@
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- AOS STYLE CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet" />
+    <!-- ANIMATE STYLE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,14 +31,14 @@
 </head>
 <body >
          <!-- NAV SECTION -->
-    <nav class="navbar navbar-inverse navbar-expand-lg fixed-top navbar-light">
+    <nav class="navbar navbar-inverse navbar-expand-lg navbar-light">
        
         <div class="container">
             
 
-                <a class="navbar-brand titulo-head" href="#">
-                    <img class="titulo-item" src="assets/img/Icon/cono-de-trafico3.png" alt="">
-                    <div class="titulo-item">Transito
+                <a class="navbar-brand titulo-head" href="index.html">
+                    <img class="titulo-item d-md-block d-lg-block d-sm-none d-none" src="assets/img/Icon/cono-de-trafico3.png" alt="">
+                    <div id="titulo-principal" class="titulo-item">Transito
                         Perito Moreno
                     </div>
                 </a>
@@ -63,12 +63,12 @@
     
     <!--HOME SECTION-->
     <section id="home-sec">
-        <div class="container"  >
+        <div class="container ">
             <div class="row text-center">
-                <div  class="col-md-12" >
-                    <span class="head-main" >Educando para una movilidad segura</span>
+                <div  class="col-md-12 tex-center" >
+                    <span id="encabezado-principal" class="head-main" >Educando para una movilidad segura</span>
                     <h3 class="head-sub-main">Municipalidad de Perito Moreno</h3>                    
-                    <h3>Santa Cruz</h3>
+                    <h3 class="prov-main">Santa Cruz</h3>
                     <p></p>
                 </div>
                 <div class="col-md-12 col-sm-12">
@@ -89,23 +89,23 @@
             <h1 class="pt-4">  <i class="fa fa-crosshairs "></i> Recomendaciones para Vehiculos </h1>
                 <div class="row text-center">
                                
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-right" data-animation="fade-right" >
                         <img class="icon-auto" src="assets/img/Icon/faros-de-coche.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             La utilización de luces bajas son obligatorias en áreas urbanas, zonas rurales, rutas, carreteras, semiautopistas y autopistas, durante las 24 horas del día.
                         </p>
                             
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-down">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-top" data-animation="fade-top">
                         <img class="icon-auto" src="assets/img/Icon/cinturon-de-seguridad.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Siempre que circule debe usar el cinturón de seguridad, así sea para circular 20 mts.
                         </p>
                         
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-left">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-left" data-animation="fade-left">
                         <img class="icon-auto" src="assets/img/Icon/asiento-de-coche-de-bebe.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Los menores de DIEZ (10) años deben viajar sujetos al asiento trasero, con el Sistema de Retención Infantil
                             homologado al efecto, en relación a su peso y tamaño.
                         </p>
@@ -115,19 +115,19 @@
                 
                 </div>
                 <div class="row text-center"> 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-right">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-right" data-animation="fade-right">
                             
                         <img class="icon-auto" src="assets/img/Icon/documentacion.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Asegúrese de portar la documentación correspondiente (DNI, Licencia de conducir clase B, cedula del automotor, seguro, revisión técnica obligatoria - RTO).
                         </p>      
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 d-md-block d-lg-block d-sm-none">
-                        <img id="icon-coche" src="assets/img/Icon/mini-coche.gif" alt="">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="icon-coche" src="assets/img/Icon/mini-coche.gif" alt="">
                     </div>
-                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-left">
+                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-left" data-animation="fade-left">
                         <img class="icon-auto" src="assets/img/Icon/neumatico.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Revisar los neumáticos: controlar que las cubiertas estén en buenas condiciones y con la presión de aire indicada por el fabricante (la profundidad mínima legal de la banda de rodadura de los neumáticos de motos es de 1,6 mm).
                         </p>        
                     </div>
@@ -149,7 +149,7 @@
                         <div class="card text-center border-1 mb-5 py-3">
                             <div class="card-body">
                               <img class="icon-boxes" src="assets/img/Icon/carnet-de-conducir.png" alt="">
-                              <h5 class="card-title mb-2 text-muted fw-bold">Licencia de Conducir</h5>
+                              <h5 class="card-title mb-2 text-muted fw-bold title-boxes">Licencia de Conducir</h5>
                             </div>
                         </div>
                     </a>
@@ -159,7 +159,7 @@
                         <div class="card text-center border-1 mb-5 py-3">
                             <div class="card-body">
                               <img class="icon-boxes" src="assets/img/Icon/clasificacion.png" alt="">
-                              <h5 class="card-title mb-2 text-muted fw-bold">Recomendaciones</h5>
+                              <h5 class="card-title mb-2 text-muted fw-bold title-boxes">Recomendaciones</h5>
                             </div>
                         </div>
                     </a>
@@ -169,7 +169,7 @@
                         <div class="card text-center border-1 mb-5 py-3">
                             <div class="card-body">
                               <img class="icon-boxes" src="assets/img/Icon/pila-de-libros.png" alt="">
-                              <h5 class="card-title mb-2 text-muted fw-bold">Material de estudio</h5>
+                              <h5 class="card-title mb-2 text-muted fw-bold title-boxes">Material de estudio</h5>
                             </div>
                         </div>
                     </a>
@@ -185,41 +185,41 @@
         <div class="container">
             <h1 class="pt-4 "> <i class="fa fa-crosshairs "></i> Recomendaciones para Motos </h1>
                 <div class="row text-center">     
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-right" data-animation="fade-right">
                         <img class="icon-auto" src="assets/img/Icon/traje-de-carrera.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Use el equipamiento de seguridad adecuado (Guantes, espaldera, botas, y mono), si llevas ropa reflectante o colores llamativos, aumentará la visibilidad.
 
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-down">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-top" data-animation="fade-top">
                         <img class="icon-auto" src="assets/img/Icon/casco-de-carreras.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Utilice el casco (es obligatorio), ya que protege la cabeza, que es la parte del cuerpo más vulnerable en un accidente.
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-left">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-left" data-animation="fade-left">
                         <img class="icon-auto" src="assets/img/Icon/neumatico.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Compruebe la presión y el estado de los neumáticos (la profundidad mínima legal de la banda de rodadura de los neumáticos de motos es de 1,0 mm).
 
                         </p>
                     </div>                                   
                 </div>
                 <div class="row text-center">     
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-right" data-animation="fade-right">
                         <img class="icon-auto" src="assets/img/Icon/documentacion.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             Asegúrese de llevar la documentación correspondiente (DNI, Licencia de conducir clase A, cedula del automotor, seguro, revisión técnica obligatoria - RTO).
 
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-md-block d-lg-block d-sm-none">
-                        <img id="icon-coche" src="assets/img/Icon/carrera.gif" alt="">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="icon-coche" src="assets/img/Icon/carrera.gif" alt="">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-left">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fade-left" data-animation="fade-left">
                         <img class="icon-auto" src="assets/img/Icon/disco-del-freno.png" alt="">
-                        <p>
+                        <p class="p-vehiculo">
                             La distribución adecuada de la fuerza de frenado entre el freno delantero y el trasero es esencial para mantener el control de la moto, por ello se recomienda utilizar ambos frenos simultáneamente, aplicando una mayor presión sobre el freno delantero.
                         </p>
                     </div>                                   
@@ -291,18 +291,13 @@
     <script src="assets/plugins/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP CORE SCRIPT   -->
     <script src="assets/plugins/bootstrap.min.js"></script>  
-     <!-- ISOTOPE SCRIPT   -->
-    <script src="assets/plugins/jquery.isotope.min.js"></script>
+    <!-- ISOTOPE SCRIPT   -->
+    <!--<script src="assets/plugins/jquery.isotope.min.js"></script>-->
     <!-- PRETTY PHOTO SCRIPT   -->
     <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
     <!-- AOS SCRIPTS -->
-    <script src="assets/js/aos.js"></script>
-    <!-- iniciar funciones de AOS SCRIPTS -->
-    <script>
-        AOS.init();
-    </script>
 
 </body>
 </html>

@@ -33,7 +33,7 @@
 body {
     font-family:'Lato', Arial, sans-serif;
     font-size:14px;
-    background-image:url(../img/sativa.png);
+    /*background-image:url(../img/1.jpg);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     line-height:50px;
     font-weight:900;
-    font-size:30px;
+    font-size: 3vw;
     text-transform:uppercase;
     text-align:center;
     color: var(--color-titulo);
@@ -100,7 +100,6 @@ p {
 
 section {
     padding-top:50px;
-    margin-top:50px;
 }
 
 
@@ -112,7 +111,41 @@ section {
     padding-left:10px;
     padding-right:10px;
 }
+/*=======================================
+    ANIMATIONS STYLES
+==================================================*/
+[data-animation="fade-right"]{
+    opacity: 0;
+    transform: translate(-20px);
+    transition: .6s ease-in .3s;
 
+    --opacity: 1;
+    /*--transform: translate(0) ;*/
+
+}
+[data-animation="fade-left"]{
+    opacity: 0;
+    transform: translate(50px);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translate(0) ;
+
+}
+[data-animation="fade-top"]{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translate(0) ;
+
+}
+/** revierte las animaciones */
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
 /*=======================================
     HOME SECTION STYLES
 ==================================================*/
@@ -123,7 +156,6 @@ section {
 }
 
 #home-sec { 
-  
     
 background: url(../img/1.jpg) no-repeat 50% 50%;
 background-attachment: fixed;
@@ -134,8 +166,8 @@ background-size: cover;
 width: 100%;
 display: block;
 height: auto;
- padding-top:190px;
-    padding-bottom:200px;
+padding-top:190px;
+padding-bottom:200px;
     color:#fff;
 }
 
@@ -168,7 +200,7 @@ height: auto;
     margin: 0;
     padding: 0;
 }
-#icon-coche{
+.icon-coche{
     width: 170px;
 }
 .titulo-item{
@@ -224,6 +256,7 @@ border-color: #E91C1C;
 ==================================================*/
 #auto-sec {
     background-color: #fff;
+    width: 100%;
     
 }
 /*=======================================
@@ -306,7 +339,7 @@ border: 1px solid #e1e1e1;
 ==================================================*/
 #info-sec{
     background-color: var(--background-boxes);
-    margin: 80px 0 0 0 ;
+    
 }
 .p-info{
     margin-bottom: 0;
@@ -330,16 +363,88 @@ border: 1px solid #e1e1e1;
     MEDIA QUERIES
     
     ==================================================*/
+@media all and (max-width:768px) and (min-width:641px){
+    .head-main { 
+            font-size:3vw;
+        }
+
+    .icon-auto{
+        width: 57px;
+    }
+    .icon-coche{
+        width: 167px;
+    }  
+}
 
 @media all and (max-width:640px) and (min-width:381px) {
     .head-main { 
         font-size:28px ;
     }
+    .head-sub-main{
+        font-size: 4vw;
+    }
+    .prov-main{
+        font-size: 4vw;
+    }
+    #encabezado-principal{
+        font-size: 3vw;
+    }
+    #titulo-principal{
+        font-size: 4vw;
+    }
+    .icon-auto{
+        width: 55px;
+    }  
+    .icon-coche{
+        width: 154px;
+    }
+    .p-vehiculo{
+        font-size: 12px;
+    }
+    .icon-boxes{
+        width: 95px;
+    }
+    .title-boxes{
+        font-size: 19px;
+    }
+    #footer{
+        font-size: 17px;
+    }  
 }
-@media all and (max-width:381px) and (min-width:200px) {
+@media all and (max-width:381px) and (min-width:0px) {
     .head-main { 
         font-size:24px ;
     }
+    .head-sub-main{
+        font-size: 4vw;
+    }
+    .prov-main{
+        font-size: 4vw;
+    }
+    #encabezado-principal{
+        font-size: 3vw;
+    }
+    #titulo-principal{
+        font-size: 4vw;
+    }
+    .icon-auto{
+        width: 50px;
+    } 
+    .icon-coche{
+        width: 145px;
+    }
+    .p-vehiculo{
+        font-size: 11px;
+    } 
+    .icon-boxes{
+        width: 80px;
+    } 
+    .title-boxes{
+        font-size: 15px;
+    }
+    #footer{
+        font-size: 12px;
+    }   
 }
 
 
