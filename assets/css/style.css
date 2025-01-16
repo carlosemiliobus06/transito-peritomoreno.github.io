@@ -1,0 +1,359 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+
+/*=======================================
+    GENERAL STYLES
+==================================================*/
+:root{
+    /* colores guardados
+        boxes{
+            rgb(82, 190, 128)
+        }
+    */
+    --color-titulo: rgb(63, 130, 126);
+    --color-titulo-white: rgb(253, 253, 253);
+    --color-titulo-black: rgb(41, 41, 41);
+    --background-principal: rgb(63, 130, 126);
+    --background-secundario: rgb(212, 174, 103);
+    --background-terciario: rgb(212, 150, 103);
+    --background-white: rgb(254, 254, 254);
+    --background-boxes: rgb(242, 242, 242);
+    --color-hover: rgb(90, 90, 90);
+}
+body {
+    font-family:'Lato', Arial, sans-serif;
+    font-size:14px;
+    background-image:url(../img/sativa.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Lato', Arial, sans-serif;
+}
+
+h1 {
+    line-height:50px;
+    font-weight:900;
+    font-size:30px;
+    text-transform:uppercase;
+    text-align:center;
+    color: var(--color-titulo);
+}
+h1::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: var(--background-principal);
+    margin: 5px auto 40px;
+}
+
+
+.text-center {
+    text-align:center;
+}
+
+h2 {
+    line-height:50px;
+    color:#E91C1C;
+}
+h3 {
+    line-height:30px;
+    padding-bottom:20px;
+}
+h4 {
+   padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+
+}
+.adjst {
+     padding-top: 0px;
+}
+.c-main {
+    color:#E91C1C;
+}
+p {
+    font-weight:400;
+    line-height:30px;
+    padding-bottom:15px;
+}
+
+.space-free {
+    height:100px;
+}
+
+.g-pad-bottom {
+    padding-bottom:40px;
+}
+
+section {
+    padding-top:50px;
+    margin-top:50px;
+}
+
+
+.form-control {
+        background-color: rgba(255, 255, 255, 0);
+}
+.c-pr-i {
+    color:#E91C1C;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/*=======================================
+    HOME SECTION STYLES
+==================================================*/
+
+.go-marg {
+    margin-top:40px;
+    color:#E91C1C;
+}
+
+#home-sec { 
+  
+    
+background: url(../img/1.jpg) no-repeat 50% 50%;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 100%;
+display: block;
+height: auto;
+ padding-top:190px;
+    padding-bottom:200px;
+    color:#fff;
+}
+
+.head-main {
+    font-size:30px ;
+    font-weight:900;
+    border:5px double #fff;
+    padding:5px;
+    text-transform:uppercase;
+    
+}
+.head-sub-main {
+    font-size:23px ;
+    font-weight:500;
+    padding:50px 20px 10px 20px;
+     text-transform:uppercase;
+    
+}
+.head-last {
+    font-size:18px ;
+    font-weight:900;
+    padding:5px 20px 20px 20px;
+    border:1px dotted #fff;
+    padding:5px;
+}
+.icon-auto{
+    width: 60px;
+}
+.velocidades{
+    margin: 0;
+    padding: 0;
+}
+#icon-coche{
+    width: 170px;
+}
+.titulo-item{
+    letter-spacing: -0.07em;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+.titulo-head{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+}
+/* ===========================================================
+   NAVBAR CHANGES   
+   ============================================================*/
+.navbar {
+	font-size: 16px;
+}
+
+.navbar-inverse {
+background: var(--background-white);
+min-height: 60px;
+padding-top: 5px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+	color: var(--color-titulo-black);
+	font-weight: bolder;
+	font-size: 25px;
+    font-weight:900;
+	letter-spacing: 2px;
+}
+.navbar-inverse :hover .navbar-brand:hover {
+	color: var(--color-hover);	
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #FFFFFF;
+}
+.navbar-inverse {
+border-color: #E91C1C;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #E91C1C;
+}
+/*=======================================
+    AUTO SECTION STYLES
+==================================================*/
+#auto-sec {
+    background-color: #fff;
+    
+}
+/*=======================================
+    MOTO SECTION STYLES
+==================================================*/
+#moto-sec {
+    background-color: #fff;
+}
+.plan {
+    background: #fff;
+    padding: 0 0 15px 0;
+    margin: 30px 0px;
+    list-style: none;
+    text-align: center;
+  
+}
+
+.plan li {
+    padding: 15px 0px;
+    color: #000;
+    font-size: 16px;
+    border-bottom:1px dotted #e1e1e1;
+}
+
+
+.plan li.plan-head {
+   padding: 40px 0px;
+line-height: 35px;
+font-size: 32px;
+font-weight: 600;
+border: none;
+   }
+
+.plan li.main-price {
+padding: 25px 0px;
+color: #FF8500;
+border: none;
+font-weight: 900;
+font-size: 60px;
+}
+
+small {
+    font-size: 15px;
+    color:#000;
+}
+
+/*==========================================
+    BOXES STYLES
+    =====================================================*/
+#boxes-sec{
+    background-color: var(--background-boxes);
+}
+.link-boxes:link, .link-boxes:visited, .link-boxes:active{
+    text-decoration: none;
+}
+.icon-boxes{
+    width: 100px;
+}
+/*=======================================
+    Contact STYLES
+==================================================*/
+#contact-sec {
+    background-color: var(--background-terciario);
+    margin-top: 0 !important;
+}
+.cnt {
+width: 100%;
+min-height: 340px;
+border: 1px solid #e1e1e1;
+}
+/*=======================================
+    LICENCIA STYLES
+==================================================*/
+#licencia-sec{
+    background-color: var(--background-boxes);
+}
+
+/*=======================================
+    INFO STYLES
+==================================================*/
+#info-sec{
+    background-color: var(--background-boxes);
+    margin: 80px 0 0 0 ;
+}
+.p-info{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+
+#footer {
+    background-color:#fff;
+    color: #17202a;
+    padding:20px 50px 20px 50px;
+    text-align:right;
+}
+
+
+/*=======================================
+    MEDIA QUERIES
+    
+    ==================================================*/
+
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main { 
+        font-size:28px ;
+    }
+}
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main { 
+        font-size:24px ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
