@@ -350,6 +350,12 @@ border: 1px solid #e1e1e1;
     margin-bottom: 0;
     padding-bottom: 0;
 }
+/*=======================================
+    MATERIAL STYLES
+==================================================*/
+#material-sec{
+    background-color: var(--background-boxes);
+}
 
 /*=======================================
     FOOTER STYLES
