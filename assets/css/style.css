@@ -160,11 +160,12 @@ section {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/collage-transito.jpg);
 background-repeat: no-repeat;    
 /*background: url(../img/collage-transito.jpg) no-repeat 50% 50%;*/
-background-attachment: scroll;
+background-attachment:scroll;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+background-position: center;
 width: 100%;
 display: block;
 height: auto;
