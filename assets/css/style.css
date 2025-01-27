@@ -207,12 +207,11 @@ color:#fff;
     width: 170px;
 }
 .titulo-item{
-    letter-spacing: -0.07em;
-    width: 50px;
+    width: 25vh;
     margin: 0;
     padding: 0;
 }
-.titulo-head{
+.titulo-head{  
     display: flex;
     flex-flow: wrap row;
     align-items: center;
