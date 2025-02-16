@@ -64,7 +64,13 @@ h1::after {
 
 h2 {
     line-height:50px;
-    color:#E91C1C;
+    font-weight:600;
+    font-size: 1.8vw;
+    text-transform:uppercase;
+    color: var(--color-titulo);
+}
+.icon-title i{
+    font-size: 2.8rem;
 }
 h3 {
     line-height:30px;
@@ -85,11 +91,16 @@ h4 {
     color:#E91C1C;
 }
 p {
-    font-weight:400;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight:500;
     line-height:30px;
     padding-bottom:15px;
+    text-align: justify;
 }
-
+strong{
+    font-weight: 800;
+}
 .space-free {
     height:100px;
 }
@@ -110,6 +121,15 @@ section {
     color:#E91C1C;
     padding-left:10px;
     padding-right:10px;
+}
+.icon-title-vehiculo{
+    width: 6.5vw;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 100%;
+}
+.content-icon-title-vehiculo{
+    padding: 3px;
 }
 /*=======================================
     ANIMATIONS STYLES
@@ -135,6 +155,15 @@ section {
 [data-animation="fade-top"]{
     opacity: 0;
     transform: translateY(-50px);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translate(0) ;
+
+}
+[data-animation="fade-bottom"]{
+    opacity: 0;
+    transform: translateY(50px);
     transition: .6s ease-in .3s;
 
     --opacity: 1;
@@ -203,9 +232,6 @@ color:#fff;
     margin: 0;
     padding: 0;
 }
-.icon-coche{
-    width: 170px;
-}
 .titulo-item{
     width: 25vh;
     margin: 0;
@@ -264,11 +290,20 @@ border-color: #E91C1C;
     width: 100%;
     
 }
+#icon-title-auto{
+    background-color: #f8c471;
+}
+#icon-title-camioneta{
+    background-color: #76d7c4;
+}
 /*=======================================
     MOTO SECTION STYLES
 ==================================================*/
 #moto-sec {
     background-color: #fff;
+}
+#icon-title-moto{
+    background-color: #f8c471;
 }
 .plan {
     background: #fff;
@@ -374,7 +409,7 @@ border: 1px solid #e1e1e1;
     MEDIA QUERIES
     
     ==================================================*/
-@media all and (max-width:768px) and (min-width:641px){
+@media all and (max-width:992px) and (min-width:768px){
     .head-main { 
             font-size:3vw;
         }
@@ -382,12 +417,10 @@ border: 1px solid #e1e1e1;
     .icon-auto{
         width: 57px;
     }
-    .icon-coche{
-        width: 167px;
-    }  
+  
 }
 
-@media all and (max-width:640px) and (min-width:381px) {
+@media all and (max-width:767px) and (min-width:576px) {
     .head-main { 
         font-size:28px ;
     }
@@ -403,12 +436,15 @@ border: 1px solid #e1e1e1;
     #titulo-principal{
         font-size: 4vw;
     }
+    h2{
+        font-size: 1.1rem;
+    }
+    .icon-title-vehiculo{
+        width: 2.6rem;
+    }
     .icon-auto{
         width: 55px;
     }  
-    .icon-coche{
-        width: 154px;
-    }
     .p-vehiculo{
         font-size: 12px;
     }
@@ -422,7 +458,7 @@ border: 1px solid #e1e1e1;
         font-size: 17px;
     }  
 }
-@media all and (max-width:381px) and (min-width:0px) {
+@media all and (max-width:575px) and (min-width:0px) {
     .head-main { 
         font-size:24px ;
     }
@@ -438,12 +474,19 @@ border: 1px solid #e1e1e1;
     #titulo-principal{
         font-size: 4vw;
     }
+    .icon-title-vehiculo{
+        width: 2.6rem; 
+        margin-bottom: 15px !important;  
+    }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .9rem;
+    }
     .icon-auto{
         width: 50px;
     } 
-    .icon-coche{
-        width: 145px;
-    }
     .p-vehiculo{
         font-size: 11px;
     } 

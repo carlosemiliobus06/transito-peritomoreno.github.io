@@ -52,6 +52,7 @@
     const elements_right = document.querySelectorAll(".fade-right");
     const elements_left = document.querySelectorAll(".fade-left");
     const elements_top = document.querySelectorAll(".fade-top");
+    const elements_bottom = document.querySelectorAll(".fade-bottom");
     function triggerAnimation(entries) {
         entries.forEach(entry =>{
             const div = entry.target;
@@ -72,6 +73,9 @@
         observar.observe(element);
     })
     elements_top.forEach( element=>{
+        observar.observe(element);
+    })
+    elements_bottom.forEach( element=>{
         observar.observe(element);
     })
 
