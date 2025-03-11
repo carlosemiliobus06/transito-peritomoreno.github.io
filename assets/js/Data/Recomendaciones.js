@@ -81,7 +81,7 @@
     },
     {
         "Id": 21,
-        "Recomendacion": "hEn la vía pública debe circular respetando las indicaciones de la autoridad competente, las señales de tránsito y las normas legales en ese orden. (prioridad normativa)."
+        "Recomendacion": "En la vía pública debe circular respetando las indicaciones de la autoridad competente, las señales de tránsito y las normas legales en ese orden. (prioridad normativa)."
     },
     {
         "Id": 22,
