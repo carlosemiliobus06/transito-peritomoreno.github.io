@@ -9,6 +9,16 @@
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
    
     ========================================================  */
+/*=======================================
+    FONTS IMPORT
+==================================================*/
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 
 /*=======================================
@@ -24,27 +34,27 @@
     --color-titulo-white: rgb(253, 253, 253);
     --color-titulo-black: rgb(41, 41, 41);
     --background-principal: rgb(63, 130, 126);
-    --background-secundario: rgb(212, 174, 103);
+    --background-secundario: rgb(252, 201, 162);
     --background-terciario: rgb(212, 150, 103);
     --background-white: rgb(254, 254, 254);
     --background-boxes: rgb(242, 242, 242);
     --color-hover: rgb(90, 90, 90);
 }
 html, body {
-    font-family:'Lato', Arial, sans-serif;
+    font-family:'Lato', Arial, sans-serif !important;
     font-size:14px;
     overflow-x: hidden;
     /*background-image:url(../img/1.jpg);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:'Lato', Arial, sans-serif;
+    font-family:'Lato', Arial, sans-serif !important;
 }
 
 h1 {
     line-height:50px;
     font-weight:900;
-    font-size: 3vw;
+    font-size: 2.6rem;
     text-transform:uppercase;
     text-align:center;
     color: var(--color-titulo);
@@ -234,7 +244,7 @@ color:#fff;
     padding: 0;
 }
 .titulo-item{
-    width: 25vh;
+    width: 13.4rem;
     margin: 0;
     padding: 0;
 }
@@ -362,7 +372,38 @@ small {
 #contact-sec {
     background-color: var(--background-terciario);
     margin-top: 0 !important;
+    
 }
+.title-contact{
+    color: var(--color-titulo-white);
+}
+.title-contact::after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: var(--background-white);
+    margin: 5px auto 40px;
+}
+.text-contact{
+    font-size: 1.6rem;
+}
+.content-contact{
+    height: 100%;
+    border-radius: 5px;
+    /*border: 1px solid var(--background-white);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-text{
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--background-secundario);
+    padding: 10px;
+    color: var(--color-titulo-white);
+}
+
 .cnt {
 width: 100%;
 min-height: 340px;
@@ -412,7 +453,7 @@ border: 1px solid #e1e1e1;
     ==================================================*/
 @media all and (max-width:992px) and (min-width:768px){
     .head-main { 
-            font-size:3vw;
+            font-size: 3vw;
         }
 
     .icon-auto{
@@ -422,8 +463,11 @@ border: 1px solid #e1e1e1;
 }
 
 @media all and (max-width:767px) and (min-width:576px) {
+    .titulo-item{
+        width: 13rem;
+    }
     .head-main { 
-        font-size:28px ;
+        font-size: 2rem;
     }
     .head-sub-main{
         font-size: 4vw;
@@ -455,16 +499,26 @@ border: 1px solid #e1e1e1;
     .title-boxes{
         font-size: 19px;
     }
+    .content-contact{
+        margin-bottom: 20px;
+    } 
     #footer{
         font-size: 17px;
     }  
 }
 @media all and (max-width:575px) and (min-width:0px) {
+    .titulo-item{
+        width: 12.3rem;
+    }
     .head-main { 
-        font-size:24px ;
+        font-size: .9rem !important;
     }
     .head-sub-main{
         font-size: 4vw;
+    }
+    .go-marg{
+        font-size: 2.5rem;
+        margin-top:35px;
     }
     .prov-main{
         font-size: 4vw;
@@ -475,9 +529,16 @@ border: 1px solid #e1e1e1;
     #titulo-principal{
         font-size: 4vw;
     }
+    .icon-title{
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
     .icon-title-vehiculo{
-        width: 2.6rem; 
-        margin-bottom: 15px !important;  
+        display: none; 
+    }
+    h1{
+        font-size: 1.8rem;
     }
     h2{
         font-size: 1rem;
@@ -499,6 +560,11 @@ border: 1px solid #e1e1e1;
     }
     #footer{
         font-size: 12px;
+    }
+    .content-contact{
+        max-width: 95%;
+        margin: 4px auto;
+        margin-bottom: 17px;
     }   
 }
 
