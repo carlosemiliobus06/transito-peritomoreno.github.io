@@ -53,11 +53,11 @@ const initialLoad = () => {
 
     //Componentes de recmoendaciones
     const mitad = Math.ceil(data.length / 2);
-    console.log(mitad);
+    
     const primeraMitad = data.slice(0,mitad);
-    console.log(primeraMitad);
+    
     const segundaMitad = data.slice(mitad);
-    console.log(segundaMitad);
+    
     
     const componentes = () => {
         for(let recomendacion of primeraMitad){
