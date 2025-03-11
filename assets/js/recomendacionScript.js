@@ -1,5 +1,8 @@
-(function ($) {
-
+//importar clase de componentes 
+import { ComponentRecomendacion } from "./Components/ComponentRecomendacion.js";
+//importar datos de las recomendaciones
+import data from "./Data/Recomendaciones.js";
+const initialLoad = () => {
     "use strict";
     var mainApp = {
 
@@ -48,6 +51,26 @@
         mainApp.main_fun();
     });
 
+    //Componentes de recmoendaciones
+    const mitad = Math.ceil(data.length / 2);
+    console.log(mitad);
+    const primeraMitad = data.slice(0,mitad);
+    console.log(primeraMitad);
+    const segundaMitad = data.slice(mitad);
+    console.log(segundaMitad);
+    
+    const componentes = () => {
+        for(let recomendacion of primeraMitad){
+            const divComponent = new ComponentRecomendacion({values: [recomendacion.Recomendacion]},"fade-right");
+            document.getElementById("section-fade-right").appendChild(divComponent.render());             
+        }
+        for(let recomendacion of segundaMitad){
+            const divComponent2 = new ComponentRecomendacion({values: [recomendacion.Recomendacion]},"fade-left");
+            document.getElementById("section-fade-left").appendChild(divComponent2.render());
+        }
+    };
+    componentes();
+
 
     //Efectos 
     const elements_right = document.querySelectorAll(".fade-right");
@@ -80,7 +103,10 @@
     elements_bottom.forEach( element=>{
         observar.observe(element);
     })
-    
-    
 
-}(jQuery));
+
+};
+
+window.addEventListener("load",()=>{
+    initialLoad();
+});
